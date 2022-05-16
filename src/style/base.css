@@ -12,3 +12,18 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+@font-face {
+    font-family: zhulang;
+    src: url(@/assets/ttf/逐浪萌芽字.ttf);
+}
+
+@font-face {
+    font-family: douyu;
+    src: url(@/assets/ttf/douyuFont.otf);
+}
+
+@font-face {
+    font-family: jianhao;
+    src: url(@/assets/ttf/Aa剑豪体.ttf);
+}
