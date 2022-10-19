@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 li {
@@ -11,6 +12,11 @@ li {
 a {
     text-decoration: none;
     color: #000;
+}
+
+button {
+    outline: none;
+    border: none;
 }
 
 @font-face {

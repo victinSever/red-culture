@@ -176,8 +176,14 @@ export default {
     gotoMagnage(e) {
       var dom = e.target;
       if (dom.tagName === "SPAN") {
-        if (dom.getAttribute("class") !== null)
-          this.$router.push("/manage/" + dom.className);
+        var classname = dom.getAttribute("class")
+        if (classname !== null){
+          if(classname != 'collection' && classname != 'cultureProduction' && classname != 'communication')
+            this.$router.push("/manage/" + dom.className)
+          else
+            this.$router.push("/" + dom.className)
+        }
+          
       }
     },
   },
@@ -501,6 +507,7 @@ export default {
 // @media screen and (min-width: 95vw) {
 //   .header-box-right {
 //     display: none;
+
 //   }
 // }
 </style>
